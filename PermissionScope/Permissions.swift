@@ -57,6 +57,10 @@ public typealias requestPermissionShowAlert     = (PermissionType) -> Void
     public let type: PermissionType = .microphone
 }
 
+@objc public class SpeechPermission: NSObject, Permission {
+    public let type: PermissionType = .speech
+}
+
 @objc public class CameraPermission: NSObject, Permission {
     public let type: PermissionType = .camera
 }
